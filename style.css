@@ -1,0 +1,602 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+body {
+    background: white;
+    color: #50362A;
+    font-family: 'Helvetica', Arial, sans-serif;
+    max-width: 100%;;
+    margin: 0 auto;
+   
+
+}
+
+#logo{
+width: 300px;
+}
+
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #efefef;
+    }
+    
+    
+    .containerHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    }
+    
+    .containerMain>h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 3rem;
+    color: #50362A;
+    font-weight: 600;
+    }
+    
+
+    /* Navigation Menu */
+    
+    .containerNavigation ul li ul{
+    display: none;
+    position: absolute;
+    margin: 1rem;
+    padding: 1rem;
+    
+    }
+    
+    .containerNavigation ul li:hover ul{
+    display: flex;
+    }
+    
+    ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    }
+    
+    a {
+    text-decoration: none;
+    color: #50362A;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    li {
+    padding: 1rem;
+    border-radius: 50%;
+    width: 10rem;
+    }
+    
+    
+    .containerNavigation {
+    border:none;
+    }
+
+
+    /* Texts  and  headers */
+
+    h1{
+        text-align: center;
+        padding: 3rem 0rem 0rem 0rem;
+        font-family:  'Parisienne', Arial, sans-serif;
+        font-size: 2.5rem;
+    }
+
+    h2{
+        text-align: center;
+        color: #76990F;
+        padding: 3rem 0rem 3rem 0rem;
+        font-family:  Helvetica, sans-serif;
+
+    }
+
+
+    /* Images */
+    .containerImage{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    
+    }
+
+    #headerImage{
+        max-width: 1000px;
+        border-radius: 3rem;
+    }
+
+
+
+    /* cooking night Event */
+
+    .containerEvent {
+        background-color: #50362A;
+        color: #efefef;
+        padding: 2rem;
+        margin-top: -2rem;
+        
+      }
+
+      .ContainerEventParaghraphs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center; 
+        padding: 0rem 15rem 0rem 15rem;
+        line-height: 1.5;   /*notice */
+        
+      }
+      
+    .containerEvent>h1 {
+        color: #aadb1c;
+        padding-bottom: 1rem;
+    }
+
+    .containerEvent > p {
+        text-align: center; 
+        width: 1000px;
+        
+    }
+
+    .ContainerEventParaghraphs p {
+        margin-bottom: 2rem;
+      }
+
+.ContainerEventParaghraphs p .highlight {
+    color: #aadb1c;
+}
+
+
+
+/* Anmeldung Form */
+/* Anmeldung Form */
+
+
+.containerAnmeldungForm{
+    background-color: #efefef;
+}
+
+.containerAnmeldungForm {
+    max-width: 100%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+  .containerAnmeldungForm > h1 {
+    text-align: center;
+
+  }
+
+  .containerAnmeldungForm form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerAnmeldungForm label {
+    margin-bottom: 8px;
+  }
+
+  .containerAnmeldungForm input,
+  .containerAnmeldungForm select {
+    padding: 1rem;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: .3rem;
+  }
+
+  .containerAnmeldungForm input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+
+  .containerAnmeldungForm input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .containerAnmeldungForm .radio-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerAnmeldungForm .radio-group label {
+    margin-bottom: 8px;
+  }
+
+  .FormAndRadio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .RadioAnmeldung > p{
+ color: #76990F;
+ font-size: 1.5rem;
+ line-height: 3.5rem;
+  }
+
+
+  #vorname,#anschrift, #email, #telefon, #studienfach {
+    width: 25rem;
+  }
+
+  .containerAnmeldungForm > h1 {    
+    color:#76990F;
+    padding: 2rem;
+  }
+
+  #submit{
+    background-color: #76990F;
+  }
+
+
+  /* Slider */
+   /* Slider */
+
+   .slider-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 600px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    touch-action: pan-y;
+    
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0 .5s ease-in-out;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block; /* To remove extra space below inline images */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  .toggle-btn {
+    position: absolute;
+    top: 30rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #76990F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 2; /* Ensure the button is above the text overlay */
+  }
+
+  .toggle-btn:hover {
+    background-color: #aadb1c;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    text-align: center;
+    z-index: 1; /* Ensure the text overlay is below the button */
+  }
+
+  .text-overlay p {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .arrow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #76990F;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 3; /* Ensure the arrows are above the slider */
+  }
+
+  .left-arrow {
+    left: 10px;
+  }
+
+  .right-arrow {
+    right: 10px;
+  }
+
+  .sliderHeader{
+    color: #76990F !important;
+    font-size: 2.5rem !important;
+  }
+
+  .fixed-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 6rem;
+  width: 100%;
+  background-color: #50362a60;
+  font-family:  'Parisienne', Arial, sans-serif;
+  text-align: center;
+  z-index: 1; /* Ensure the fixed text is above the image */
+}
+
+
+/* kisten-anmeldung */
+
+#bio-logo {
+  margin: 3rem 0rem 0rem 0rem;
+  width: 200px;
+}
+
+.FormBioKiste{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  margin-top: 1rem;
+}
+
+
+.RadioBioKiste > p{
+  color: #76990F;
+  font-size: 2.5rem;
+  line-height: 4.5rem;
+  font-family: "Parisienne", Helvetica, sans-serif;
+   }
+
+.RadioBioKiste{
+margin-top: -4em;
+}
+
+#myCheckbox{
+margin-top: 1rem;
+margin-left: 22%;
+}
+ 
+
+/* Kontakt und Social Media */
+/* Kontakt und Social Media */
+
+
+.kontakSocialMedia{
+  background-color: #50362A;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5rem;
+  width: 100%;
+}
+
+.kontakt > h1 {
+  color: #aadb1c;
+  margin-bottom: 1rem;
+}
+
+.socialMedia > h1 {
+  color: #aadb1c;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.kontakt > p {
+  color: #efefef;
+}
+
+.kontakt > p > .highlight{
+  color: #aadb1c;
+  line-height: 1.5rem;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px; 
+  margin: auto;
+}
+
+.social-icons i {
+  font-size: 3rem;
+  color: #ffffff; 
+  cursor: pointer;
+}
+
+
+/* impressum */
+
+.impressum {
+    background-color: #efefef;
+    line-height: 1.5;
+    color: #76990F;
+    padding-bottom: 3rem;
+}
+
+.impressum p {
+  margin-left: 2rem;
+  color: #000000;
+  font-size: small;
+}
+
+.impressum > h1{
+  margin-bottom: 1rem;
+  color: #76990F;
+}
+
+
+
+
+/* responsive */
+/* responsive */
+
+
+#menuToggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+
+/* maximum width of 768px (tablets) */
+@media screen and (max-width: 768px) {
+  .container, .FormAndRadio, .FormBioKiste, .kontakSocialMedia{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .kontakt > p{
+text-align: center;
+  }
+
+.checkbox-container{
+text-align: start;
+}
+
+.fixed-text {
+  font-size: 3rem;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 3rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: block;
+}
+
+
+  .containerNavigation {
+      display: flex;
+      align-items: center;
+  }
+
+  .nav-links {
+    
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 60px; 
+      left: 0;
+      background-color: #fff; 
+      width: 100%;
+      z-index: 1;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+
+  #menuToggle:checked + .menu-icon + .nav-links {
+      display: flex;
+  }
+
+
+  .toggle-btn {
+    top: 80%;
+    left: 50%;
+  }
+
+
+  .text-overlay {
+    margin-top: 12.5rem;
+    width: 100%;
+    height: 100%;
+    font-size: small;
+    padding: 2rem;
+  }
+
+
+  .ContainerEventParaghraphs{
+    padding: 1rem;
+  }
+
+
+
+  #headerImage{
+    max-width: 100%;
+    border-radius: 3rem;
+}
+
+}
+
+
+
+
+/* maximum width of 320px (phones) */
+@media screen and (max-width: 320px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+  }
+
+
+  }
+
+
+
+
+

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grünkram</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    
+
+</head>
+
+</head>
+<body>
+
+    <header id="siteHeader">
+        <div class="container containerHeader">
+       
+            <img id="logo" src="./img/Logo_pantone.gif"></a>
+
+        <nav id="siteNavigation">
+            <a href=""></a>
+
+            <div class="container containerNavigation">
+
+                <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon">&#9776;</label>
+
+                
+                <ul class="nav-links">
+                    <li><a href="#cookingNight">Cooking Night</a></li>
+                    <li><a href="#rezepte">Rezepte</a></li>
+                    <li><a href="#bioKiste">Bio Kiste</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#impressum">Impressum</a></li>
+                </ul>
+                
+            </div>
+            
+        </nav>
+    </div>
+    </header>
+
+
+<main id="siteMain">
+  <br>
+  <br>
+  <br>
+  <br>
+    <h1>Grünkram präsentiert</h1>
+    <h2 id="cookingNight">Cooking Night at Greenhouse</h2>
+    
+<div class="container containerMain" >
+    <div class="container containerImage">
+        <img src="img/Bild_12 Kopie.jpg" id="headerImage" alt="">
+    </div>
+    <div class="container containerEvent">
+        <h1>Worauf Sie sich freuen dürfen</h1>
+
+        <div class="ContainerEventParaghraphs">
+            <p>Ein gemeinsam zubereitetes schmackhaftes Menü mit frischen Zutaten aus unserem eigenen Anbau – 
+                ökologisch, regional und erschwinglich.</p>
+        
+            <p>Sie erleben Spaß und Genuss beim gemeinsamen Kochen und Schlemmen. 
+                Lassen Sie sich überraschen, welche Kochkoryphäe in Ihrer CookingNight die Anleitung übernimmt!</p>
+        
+            <p>Außerdem eröffnen Sie sich und Ihren Mitbewohner/innen eine große Chance:
+                Alle Teilnehmer der Cooking Night können unsere wöchentliche Gemüsekiste drei Monate lang zum Sonderpreis abonnieren.</p>
+        
+            <p>Eingeladen zur Cooking Night sind: Studierende der Hochschulorte Worms, Mannheim, Ludwigshafen, Heidelberg und Darmstadt aller Fachrichtungen.</p>
+        
+            <p>Unkostenbeitrag: <span class="highlight">EUR 20,–</span>
+                <br>
+            Anmeldeschluss: <span class="highlight">1. Oktober 2017</span>
+                <br>
+            4 × in diesem Herbst jeweils ab <span class="highlight">18.30 Uhr</span>
+                 <br>
+            in unserem <span class="highlight">Gemüsehof in Bobenheim-Roxheim, Viehweg 17</span></p>
+        </div>
+        
+    </div>
+
+<div class="container containerAnmeldungForm">
+        <h1>Anmeldung</h1>
+        <div class="FormAndRadio">
+            <form action="#" method="post">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+            
+                <label for="vorname"></label>
+                <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required>
+            
+                <label for="anschrift"></label>
+                <input type="text" id="anschrift" name="anschrift" placeholder="Ihre Anschrift" required>
+            
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Ihr E-Mail" required>
+            
+                <label for="telefon"></label>
+                <input type="tel" id="telefon" name="telefon" placeholder="Ihre Telefonnummer" required>
+            
+                <label for="studienfach"></label>
+                <input type="text" id="studienfach" name="studienfach" placeholder="Studienfach und Studienort" required>
+              </form>
+
+              <div class="RadioAnmeldung">
+                <p>Lieblingstermin für die Cooking Night:</p>
+                <div class="radio-group">
+                  <label><input type="radio" name="lieblingstermin" value="termin1"> Freitag, 27. Oktober 2017 </label>
+                  <label><input type="radio" name="lieblingstermin" value="termin2"> Samstag, 28. Oktober 2017</label>
+                  <label><input type="radio" name="lieblingstermin" value="termin3"> Freitag, 3. November 2017</label>
+                  <label><input type="radio" name="lieblingstermin" value="termin4"> Samstag, 4. November 2017</label>
+
+                  <div class="RadioAnmeldung">
+                    <p>Ersatztermin für die Cooking Night:</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="lieblingstermin" value="date1"> Friday, 27th October 2017 </label>
+                        <label><input type="radio" name="lieblingstermin" value="date2"> Saturday, 28th October 2017</label>
+                        <label><input type="radio" name="lieblingstermin" value="date3"> Friday, 3rd November 2017</label>
+                        <label><input type="radio" name="lieblingstermin" value="date4"> Saturday, 4th November 2017</label>
+                    </div>
+                </div>
+                
+
+                  <input type="submit" value="Absenden" id="submit">
+                </div>
+              </div>
+        </div>
+</div>
+
+
+<h1 class="sliderHeader" id="rezepte">Rezepte zum Warmkochen</h1>
+<div class="slider-container">
+    <div class="left-arrow arrow-btn" onclick="showSlide(currentSlide - 1)">&#8249;</div>
+    <div class="slider" ontouchstart="startSwipe(event)" ontouchmove="swipe(event)" ontouchend="endSwipe()">
+      <div class="slide">
+        
+        <img src="img/Bild_09 Kopie.jpg" alt="Food Photo 1">
+        <div class="fixed-text">Pastinaken-Suppe</div>
+        <div class="toggle-btn" onclick="toggleText(0)">Rezept Anzeigen</div>
+        <div class="text-overlay">
+          <p>Pastinaken-Suppe <br>
+            Zutaten: 600 g Pastinaken, 300 g Kartoffeln, 2 l Wasser, 200 g Sahne, 75 g Butter, 2 EL Gemüsebrühe, Salz, Pfeffer
+            Zubereitung: Kartoffeln und Pastinaken schälen und in Würfel schneiden. Etwa 25 Minuten in der Gemüsebrühe kochen, anschließend pürieren. Mit Salz und Pfeffer abschmecken und leicht aufkochen. Anschließend Butter und Sahne dazu geben und kurz ziehen lassen. 
+            </p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/Bild_06 Kopie.jpg" alt="Food Photo 2">
+        <div class="fixed-text">Grünkohlaufstrich</div>
+        <div class="toggle-btn" onclick="toggleText(1)">Rezept Anzeigen</div>
+        <div class="text-overlay">
+            <p>Grünkohlaufstrich <br>
+                Zutaten: 250 g Grünkohl, 250 g Hüttenkäse, 2 EL Olivenöl, 2 EL geröstete Sesampaste, 200 g Gerstenflocken, Paprika, Kräutersalz
+                Zubereitung: Grünkohl fein hacken, in wenig Wasser garen und abtropfen lassen. Mit Hüttenkäse, Öl, Sesampaste und Gerstenflocken zu einer geschmeidigen Masse rühren. Mit Paprika und Kräutersalz kräftig abschmecken und in ein verschließbares Gefäß füllen. Im Kühlschrank aufbewahren. 
+                </p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/Bild_07.jpg" alt="Food Photo 3">
+        <div class="fixed-text">Gebackene Schwarzwurzeln</div>
+        <div class="toggle-btn" onclick="toggleText(2)">Rezept Anzeigen</div>
+        <div class="text-overlay">
+          <p>Gebackene Schwarzwurzeln<br>
+            Zutaten: 500 g Schwarzwurzeln, 1 Ei, 6 EL Mehl, 1 Glas Weißwein, Petersilie, Zitrone, Salz und Pfeffer, Olivenöl
+            Zubereitung: Wurzeln schälen, in etwa 4 cm lange Stücke schneiden und bissfest weich dünsten. Das Ei verquirlen, mit Mehl, Wein, fein gehackter Petersilie und geriebener Zitronenschale zu einem dünnflüssigen Teig verrühren. Salzen und pfeffern. Wurzeln durch den Teig ziehen und in der Pfanne in heißem Öl ausbacken. Mit Zitronenscheiben servieren. 
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-arrow arrow-btn" onclick="showSlide(currentSlide + 1)">&#8250;</div>
+  </div>
+  
+
+  <div class="container containerAnmeldungForm">
+    
+    <h1 id="bioKiste">Unsere Bio-Kisten für Sie</h1>
+
+    <div class="FormBioKiste">
+        
+        <form action="#" method="post">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+        
+            <label for="vorname"></label>
+            <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required>
+        
+            <label for="anschrift"></label>
+            <input type="text" id="anschrift" name="anschrift" placeholder="Ihre Anschrift" required>
+        
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Ihr E-Mail" required>
+        
+            <label for="telefon"></label>
+            <input type="tel" id="telefon" name="telefon" placeholder="Ihre Telefonnummer" required>
+         
+            <label for="rechnung"></label>
+            <input type="text" id="telefon" name="rechnung" placeholder="Ihre Rechnungsadresse" required>
+        
+            <label for="lieferadresse"></label>
+            <input type="text" id="lieferadresse" name="lieferadresse" placeholder="Ihre Lieferadresse" required>
+        </form>
+
+
+          <div class="RadioBioKiste">
+            <p>Kistengröße</p>
+            <div class="radio-group">
+              <label><input type="radio" name="lieblingstermin" value="termin1"> Einpersonenhaushalt</label>
+              <label><input type="radio" name="lieblingstermin" value="termin2"> Zweipersonenhaushalt</label>
+              <label><input type="radio" name="lieblingstermin" value="termin3"> Mehrpersonenhaushalt</label>
+
+
+
+
+
+              <input type="submit" value="Absenden" id="submit">
+
+
+              <img id="bio-logo" src="img/Bio-Siegel2.png" alt="">
+            </div>
+          </div>
+
+    </div>
+
+
+    <div class="checkbox-container">
+        <input type="checkbox" id="myCheckbox" class="checkbox">
+        <label for="myCheckbox">Ich will das Spezial-Abo für die Gemüsekiste in Anspruch nehmen.</label>
+      </div>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="myCheckbox" class="checkbox">
+        <label for="myCheckbox">Ich will mich erst auf der Cooking Night entscheiden, ob ich das Sonder-Abo in Anspruch nehme.</label>
+      </div>
+
+
+</div>
+
+<div class="kontakSocialMedia" >
+
+    <div class="kontakt" id="kontakt">
+        <h1>Kontakt und Info-Telefon</h1>
+        <p>Ansprechpartner:<U. class="highlight"> U. Grünting</span></p>
+        <p>E-Mail:<span class="highlight"> cookingnight@gruenkram.eu</span></p>
+        <p>Telefon:<span class="highlight"> 062397/9876-12</span></p>
+    </div>
+
+    <div class="socialMedia">
+        <h1>Social Media</h1>
+        <div class="social-icons">
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-snapchat"></i>
+          </div>
+    </div>
+</div>
+
+<div class="impressum" id="impressum">
+    <h1>Impressum</h1>
+    <p>Gemüsehof „Grünkram“, Uwe Grünting, Thea Schwarzheide, Viehweg17,<br>
+         67240 Bobenheim-Roxheim, <br>
+         Telefon: 062397/9876-0 <br>
+         E-Mail: u.gruenting@gruenkram.eu <br>
+        www.gruenkram.eu, Registergericht: Amtsgericht Worms,Registernummer: HRB 12345, <br>
+        Umsatzsteuer-Identifikationsnummer gemäß §27aUmsatzsteuergesetz: DE 123456789, Steuer-Nummer: 098 765 432 1</p>
+</div>
+
+</main>
+
+
+
+<footer id="siteFooter">
+    <div class="container containerFooter">
+    </div>
+    <nav class="container impresumContainer">
+    </nav>
+</footer>
+
+</body>
+<script src="js.js"></script>
+</html>
